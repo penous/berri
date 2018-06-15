@@ -54,7 +54,7 @@ const ComponentQuestion3 = {
   <div class="row">
   <div class="ten columns" style="margin-top: 25%">
   <p>{{question}}</p>
-  <div class="row"  style="margin-left: 50%">
+  <div class="row"  style="margin-left: 30%">
   <div class="three columns">
   <p style="font-size:18px;" class="button" v-on:click="onClick" >Ja zekers</p>
   </div>
