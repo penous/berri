@@ -29,7 +29,7 @@
 <body>
   <style>
     .fade-enter-active, .fade-leave-active {
-      transition: opacity .5s;
+      transition: opacity .3s ease;
     }
     .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
 opacity: 0;
@@ -39,7 +39,9 @@ opacity: 0;
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div id="app" class="container">
-    <component v-bind:is="questionNr" @click="updateComponents" ></component>
+    <transition name="fade" mode="out-in">
+      <component v-bind:is="questionNr" @click="updateComponents" ></component>
+    </transition>
     <!-- <button v-on:click="show = !show"> -->
     <!-- Toggle -->
     <!-- </button> -->
